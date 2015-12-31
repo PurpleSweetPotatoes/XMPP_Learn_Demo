@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFirendViewController">
+            <connections>
+                <outlet property="AddBtn" destination="mVt-dZ-dAZ" id="6c8-0z-LNg"/>
+                <outlet property="textField" destination="xAM-7G-GjR" id="IhP-qL-dPX"/>
+                <outlet property="view" destination="21N-CK-GgA" id="Orj-Rg-fe9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="21N-CK-GgA">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAM-7G-GjR">
+                    <rect key="frame" x="125" y="37" width="220" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="zTf-ax-0tN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVt-dZ-dAZ">
+                    <rect key="frame" x="172.5" y="100" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="kM9-y8-dd3"/>
+                        <constraint firstAttribute="height" constant="30" id="u1H-Cg-Vf0"/>
+                    </constraints>
+                    <state key="normal" title="添加"/>
+                    <connections>
+                        <action selector="addBtnClickedEvent:" destination="-1" eventType="touchUpInside" id="b8x-yf-bou"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lje-Q1-qLz">
+                    <rect key="frame" x="20" y="40" width="85" height="20.5"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="aem-yT-oFz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xAM-7G-GjR" firstAttribute="leading" secondItem="lje-Q1-qLz" secondAttribute="trailing" constant="20" id="Fnf-jK-gTm"/>
+                <constraint firstItem="mVt-dZ-dAZ" firstAttribute="centerX" secondItem="21N-CK-GgA" secondAttribute="centerX" id="IOp-Z8-Vtv"/>
+                <constraint firstItem="lje-Q1-qLz" firstAttribute="leading" secondItem="21N-CK-GgA" secondAttribute="leading" constant="20" id="YjH-Mr-H0z"/>
+                <constraint firstItem="mVt-dZ-dAZ" firstAttribute="top" secondItem="xAM-7G-GjR" secondAttribute="bottom" constant="33" id="gYP-m5-h0A"/>
+                <constraint firstAttribute="trailing" secondItem="xAM-7G-GjR" secondAttribute="trailing" constant="30" id="oTj-hY-Bvj"/>
+                <constraint firstItem="lje-Q1-qLz" firstAttribute="top" secondItem="21N-CK-GgA" secondAttribute="top" constant="40" id="r0p-aK-djw"/>
+                <constraint firstItem="xAM-7G-GjR" firstAttribute="top" secondItem="21N-CK-GgA" secondAttribute="top" constant="37" id="r53-75-0CO"/>
+                <constraint firstItem="xAM-7G-GjR" firstAttribute="leading" secondItem="lje-Q1-qLz" secondAttribute="trailing" constant="20" id="tAA-MV-v0N"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="330.5" y="145.5"/>
+        </view>
+    </objects>
+</document>

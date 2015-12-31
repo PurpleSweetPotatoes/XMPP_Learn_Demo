@@ -1,0 +1,20 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'XMPP_cheat' do
+pod 'XMPPFramework', '~> 3.6.6'
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'IQKeyboardManager', '~> 3.3.4'
+pod 'BmobSDK', '~> 1.6.5'
+end
+
+target 'XMPP_cheatTests' do
+
+end
+
+target 'XMPP_cheatUITests' do
+
+end
+
